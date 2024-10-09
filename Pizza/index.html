@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=1.0">
+        <meta name="description" content="Pizzeria Website">
+        <meta name="keywords" content="pizza restaurant, pizza near me">
+        <meta name="author" content="Practice Web Design">
+        <title>
+            Pizzeria Global | Home
+        </title>
+
+        <!-- GOOGLE FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+        <!-- FONTAWESOME CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- OVERLAY FOR MOBILE -->
+        <div id="overlay">
+            <div>
+                <i class="fa fa-times" title="Button to close mobile navigation" onclick="off()"></i>
+            </div>
+            <div class="overlay-text">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="order.html" class="order-nav">Order</a>
+            </div>
+        </div>
+
+        <header>
+            <nav class="nav full-nav">
+                <div>
+                    <img src="images/alvins_pizza_resturant_logo.png" alt="Pizzeria Logo" style="width: 1.5rem;" loading="lazy">
+                </div>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="order.html" class="order-nav">Order</a>
+                </div>
+            </nav>
+    
+            <!-- MOBILE -->
+            <nav class="nav mobile-nav">
+                <div>
+                    <img src="images/alvins_pizza_resturant_logo.png" alt="Pizzeria Logo" style="width: 25%;" loading="lazy">
+                </div>
+                <div>
+                    <i class="fa-solid fa-bars" title="Button to open mobile navigation" onclick="on()"></i>
+                </div>
+            </nav>
+        </header>
+        
+
+        <main>
+            <div class="hero-container">
+                <img class="hero-image" src="images/pepperoni_meat_sausage_chesse_pizza_in_oven.png" alt="Pizza going inside the oven" loading="lazy">
+                <div class="hero-text">
+                    <h1>Nikhil's Pizzeria</h1>
+                    <a href="order.html" class="hero-btn">Order</a>
+                </div>
+            </div>
+            <div class="red-spacer"></div>
+
+            <!-- PIZZA GRID -->
+             <div class="pizzas">
+                <h2>Pizza Favorites</h2>
+                <div class="pizza-grid">
+                    <div class="pizza-child">
+                        <h4>Pepperoni Pizza ₹299</h4>
+                        <img src="images/hot_pepperoni_pizza_near_me.png" alt="Pepperoni Pizza" loading="lazy" style="width: 100%;">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="add-selected">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <h4>0</h4>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="pizza-child">
+                        <h4>Supreme Pizza ₹399</h4>
+                        <img src="images/hot_supreme_pizza_near_me.png" alt="Pepperoni Pizza" loading="lazy" style="width: 100%;">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="add-selected">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <h4>0</h4>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="pizza-child">
+                        <h4>Vegan Pizza ₹149</h4>
+                        <img src="images/hot_vegan_pizza_near_me.png" alt="Pepperoni Pizza" loading="lazy" style="width: 100%;">
+                        <button class="add-to-cart">Add to Cart</button>
+                        <div class="add-selected">
+                            <button><i class="fa-solid fa-minus"></i></button>
+                            <h4>0</h4>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </main>
+
+        <!-- FOOTER -->
+         <footer>
+            <div>
+                <img src="images/alvins_pizza_resturant_logo.png" alt="Pizzeria Logo" style="width: 10%;" loading="lazy">
+             </div>
+             <div>
+                <div>
+                    <a href="index.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="about.html">About</a>
+                    <a href="order.html">Order</a>
+                 </div>
+                 <div>
+                    <h4>Copyright 2024 Nikhil's Pizzeria</h4>
+                 </div>
+             </div>
+             <div>
+                <img src="images/alvins_instagram.png" alt="Nikhil's Instagram Logo" style="width: 10%;" loading="lazy">
+                <img src="images/Alvins_facebook.png" alt="Nikhil's Facebook Logo" style="width: 10%;" loading="lazy">
+             </div>
+         </footer>
+
+    </body>
+</html>
